@@ -28,9 +28,9 @@ public class StackoverflowSearchWidget extends BaseWidget {
 		searchInput.sendKeys(text);
 	}
 	
-	public void clickSearchButton() {
+	public StackoverflowResultWidget clickSearchButton() {
 		searchButton.click();
-		//return ElviraSearchResultPage.createPage(driver);
+		return StackoverflowResultWidget.createWidget(driver);
 	}
 
 }
